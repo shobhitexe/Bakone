@@ -1,22 +1,32 @@
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import Heading from "@/components/ui/Heading";
 import Image from "next/image";
+import Link from "next/link";
 
 const ArrData = [
   {
     title: "Diamonds & Gems",
     desc: "Limited editions, mainly for collecting purposes, not for circulation",
     img: "/images/explore/gems.png",
+    link: "/marketplace",
   },
   {
     title: "Investment Coins",
     desc: "Limited editions, mainly for collecting purposes, not for circulation",
     img: "/images/explore/coin.webp",
+    link: "/marketplace",
   },
   {
     title: "Bullion Marketplace",
     desc: "Limited editions, mainly for collecting purposes, not for circulation",
     img: "/images/explore/bullion.png",
+    link: "/marketplace",
+  },
+  {
+    title: "Invest in Mines",
+    desc: "Limited editions, mainly for collecting purposes, not for circulation",
+    img: "/images/explore/bullion.png",
+    link: "/marketplace",
   },
 ];
 
@@ -28,56 +38,99 @@ const ArrDataOther = [
   },
   {
     title: "Online Shopping",
-    desc: "Discover the ease of shopping at Bakone browse, compare and shop your favourite pieces.",
+    desc: "Discover the ease of shopping at BAKONE browse, compare and shop your favourite pieces.",
     img: "/images/explore/2.png",
   },
   {
     title: "Easy Exchange",
-    desc: "Upgrade your gold to stunning new Bakone jewellery with 100% excange value",
+    desc: "Upgrade your gold to stunning new BAKONE jewellery with 100% excange value",
     img: "/images/explore/3.png",
   },
   {
-    title: "Trust of Bakone",
-    desc: "With Bakone, you're choosing exquisite jewellery backed by the trust of the Bakone.",
+    title: "Trust of BAKONE",
+    desc: "With BAKONE, you're choosing exquisite jewellery backed by the trust of the BAKONE.",
     img: "/images/explore/4.png",
   },
 ];
 
-export default function ExploreBakone() {
+export default function ExploreBAKONE() {
   return (
     <div className="container mx-auto pb-20 flex flex-col gap-10">
       <Heading
         title={"Explore"}
-        sub="Bakone"
+        sub="BAKONE"
         desc={
           "Buy, sell, and trade high-quality precious metals and rare minerals in a secure, trusted marketplace metals and rare minerals in a secure, trusted marketplace."
         }
       />
 
-      <div className="grid grid-cols-3 items-end">
-        {ArrData.map((item) => (
-          <div
-            className="bg-[#DEC19F] max-w-sm mx-auto rounded-2xl pt-2 h-full"
-            key={item.title}
-          >
-            <div className="bg-[#F0E7D9] rounded-2xl pt-5 pl-5 flex flex-col justify-between gap-5 h-full">
-              <div className="text-[#8F5F1B] font-semibold text-3xl">
-                {item.title}
+      <div className="flex flex-col gap-10">
+        <div className="grid grid-cols-2 items-end gap-10">
+          {ArrData.map((item) => (
+            <div
+              className="bg-[#DEC19F] w-full mx-auto rounded-2xl pt-2 h-full"
+              key={item.title}
+            >
+              <div className="bg-[#F0E7D9] rounded-2xl pt-5 pl-5 flex flex-col justify-between gap-5 h-full">
+                <div className="text-[#8F5F1B] font-semibold text-3xl">
+                  {item.title}
+                </div>
+                <div>{item.desc}</div>
+
+                <Link
+                  href={item.link}
+                  className={`${buttonVariants({
+                    variant: "outline",
+                    size: "lg",
+                    className: "w-fit text-black",
+                  })}`}
+                >
+                  View More
+                </Link>
+
+                <Image
+                  src={item.img}
+                  alt={item.title}
+                  width={382}
+                  height={307}
+                  className="self-end"
+                />
               </div>
-              <div>{item.desc}</div>
-
-              <Button
-                variant={"outline"}
-                size={"lg"}
-                className="text-black border-2 rounded-lg w-fit"
-              >
-                View More
-              </Button>
-
-              <Image src={item.img} alt={item.title} width={478} height={384} />
             </div>
+          ))}
+        </div>
+
+        <div className="bg-[#DEC19F] w-full mx-auto rounded-2xl pt-2 h-full">
+          <div className="bg-[#F0E7D9] rounded-2xl pt-5 pl-5 flex flex-col justify-between gap-5 h-full">
+            <div className="text-[#8F5F1B] font-semibold text-3xl">
+              BAKONE Auction House
+            </div>
+            <div>
+              Limited editions, mainly for collecting purposes, not for
+              circulation Discover the ease of shopping at Bakone browse,
+              compare and shop your favourite pieces.
+            </div>
+
+            <Link
+              href={"/auction/1"}
+              className={`${buttonVariants({
+                variant: "outline",
+                size: "lg",
+                className: "w-fit text-black",
+              })}`}
+            >
+              View More
+            </Link>
+
+            <Image
+              src={"/images/auction.png"}
+              alt={"auction"}
+              width={382}
+              height={307}
+              className="self-end"
+            />
           </div>
-        ))}
+        </div>
       </div>
 
       <div className="grid grid-cols-4 mt-10">

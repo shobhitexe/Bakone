@@ -15,8 +15,8 @@ const tenor = Tenor_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Bakone",
-  description: "Bakone",
+  title: "BAKONE",
+  description: "BAKONE",
 };
 
 export default function RootLayout({

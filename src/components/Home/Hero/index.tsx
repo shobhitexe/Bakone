@@ -10,7 +10,7 @@ export default function Hero() {
         muted
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
-        <source src="/videos/bakone1.mp4" type="video/mp4" />
+        <source src="/videos/BAKONE1.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
@@ -27,7 +27,7 @@ export default function Hero() {
 
         <h1 className="text-white md:text-6xl sm:text-5xl ss:text-4xl text-3xl font-tenor">
           Time Crafted Golds, Diamonds
-          <br />& Bullions by Bakone.
+          <br />& Bullions by BAKONE.
         </h1>
 
         <p className="text-[#D9D9D9] max-w-3xl sm:text-base text-sm">

@@ -82,7 +82,7 @@ export default function Navigation() {
               ))}
 
               <NavigationMenuItem>
-                <NavigationMenuLink>Bakone Crypto</NavigationMenuLink>
+                <NavigationMenuLink>BAKONE Crypto</NavigationMenuLink>
               </NavigationMenuItem>
 
               <NavigationMenuItem>

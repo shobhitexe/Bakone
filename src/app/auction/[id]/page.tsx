@@ -224,7 +224,7 @@ export default async function GemstoneAuctionPage({
           <div className="rounded-md border border-green-100 bg-green-50 p-4">
             <div className="mb-2 flex items-center gap-2 text-green-700">
               <Shield className="h-5 w-5" />
-              <h3 className="font-medium">Bakone Buyer Protection</h3>
+              <h3 className="font-medium">BAKONE Buyer Protection</h3>
               <div className="ml-auto">
                 <svg
                   className="h-5 w-5 text-gray-400"
@@ -283,7 +283,7 @@ export default async function GemstoneAuctionPage({
       <div className="mt-8">
         <h2 className="mb-4 text-lg font-medium">Description</h2>
         <p className="mb-4 text-sm text-gray-700">
-          Bakone provides all necessary documents. The jewelry is accompanied by
+          BAKONE provides all necessary documents. The jewelry is accompanied by
           gift packaging: a box, a tag and an envelope for storing documents and
           receipts.
         </p>

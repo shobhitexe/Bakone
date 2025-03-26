@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <Image
               src="/images/logo.svg"
-              alt="Bakone"
+              alt="BAKONE"
               width={170}
               height={40}
               className="mb-4 h-10 brightness-0 invert"
@@ -19,7 +19,7 @@ export default function Footer() {
               Buy, sell, and trade high-quality precious metals and rare
               minerals in a secure, trusted marketplace.
             </p>
-            <div className="flex gap-2">
+            {/* <div className="flex gap-2">
               <Link href="#" className="rounded-full bg-white p-1.5">
                 <Image
                   src="/placeholder.svg?height=16&width=16"
@@ -56,11 +56,11 @@ export default function Footer() {
                   className="h-4 w-4"
                 />
               </Link>
-            </div>
+            </div> */}
           </div>
 
           <div>
-            <h3 className="mb-4 font-medium">Bakone</h3>
+            <h3 className="mb-4 font-medium">BAKONE</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="#">Catalog of Stones</Link>
@@ -126,9 +126,9 @@ export default function Footer() {
 
       <div className=" py-4 text-center text-xs">
         <div className="container mx-auto px-4">
-          <p>© 2023 Bakone. All rights reserved</p>
+          <p>© 2023 BAKONE. All rights reserved</p>
           <p className="mt-2">International Shipping</p>
-          <p className="mt-1">email: info@bakone.com</p>
+          <p className="mt-1">email: info@BAKONE.com</p>
         </div>
       </div>
     </footer>

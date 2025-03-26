@@ -187,7 +187,7 @@ export default async function GemstoneDetailPage({
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           <div>
             <p className="mb-4 text-sm text-gray-700">
-              Bakone provides all necessary documents. The jewelry is
+              BAKONE provides all necessary documents. The jewelry is
               accompanied by gift packaging: a box, a tag and an envelope for
               storing documents and receipts.
             </p>

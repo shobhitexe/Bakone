@@ -16,7 +16,7 @@ export default function MarketplaceHeader() {
         <Link href="/" className="flex items-center justify-center">
           <Image
             src="/images/logo.svg"
-            alt="Bakone"
+            alt="BAKONE"
             width={166}
             height={44}
             className="sm:w-[166px] w-[100px]"
