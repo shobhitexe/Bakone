@@ -5,19 +5,19 @@ import Link from "next/link";
 
 const ArrData = [
   {
-    title: "Diamonds & Gems",
+    title: "Shop Diamonds",
     desc: "Limited editions, mainly for collecting purposes, not for circulation",
     img: "/images/explore/gems.png",
     link: "/marketplace",
   },
   {
-    title: "Investment Coins",
+    title: "Gold Coins",
     desc: "Limited editions, mainly for collecting purposes, not for circulation",
     img: "/images/explore/coin.webp",
     link: "/marketplace",
   },
   {
-    title: "Bullion Marketplace",
+    title: "Shop bullion",
     desc: "Limited editions, mainly for collecting purposes, not for circulation",
     img: "/images/explore/bullion.png",
     link: "/marketplace",
