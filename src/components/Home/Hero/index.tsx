@@ -10,7 +10,7 @@ export default function Hero() {
         muted
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
-        <source src="/videos/BAKONE1.mp4" type="video/mp4" />
+        <source src="/videos/bakone1.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
@@ -37,10 +37,10 @@ export default function Hero() {
         </p>
 
         <div className="flex items-center gap-4">
-          <Button variant={"gold"} size={"xl"}>
+          <Button variant={"gold"} size={"xl"} className="text-white">
             Shop Gold Coins
           </Button>
-          <Button variant={"outline"} size={"xl"}>
+          <Button variant={"outline"} size={"xl"} className="text-white">
             Shop Diamonds
           </Button>
         </div>
