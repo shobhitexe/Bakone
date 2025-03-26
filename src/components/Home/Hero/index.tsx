@@ -16,7 +16,7 @@ export default function Hero() {
 
       <div className="absolute inset-0 bg-black/50"></div>
 
-      <div className="relative z-10 container mx-auto py-32 flex flex-col px-2 gap-5">
+      <div className="relative z-10 container mx-auto py-56 flex flex-col px-2 gap-5">
         <Image
           src={"/images/logo.svg"}
           alt={"logo"}
@@ -25,7 +25,7 @@ export default function Hero() {
           className="sm:w-[190px] ss:w-[150px] w-[130px]"
         />
 
-        <h1 className="text-white md:text-6xl sm:text-5xl ss:text-4xl text-3xl font-tenor">
+        {/* <h1 className="text-white md:text-6xl sm:text-5xl ss:text-4xl text-3xl font-tenor">
           Time Crafted Golds, Diamonds
           <br />& Bullions by BAKONE.
         </h1>
@@ -34,7 +34,7 @@ export default function Hero() {
           Buy, sell, and trade high-quality precious metals and rare minerals in
           a secure, trusted marketplace metals and rare minerals in a secure,
           trusted marketplace.
-        </p>
+        </p> */}
 
         <div className="flex items-center gap-4">
           <Button variant={"gold"} size={"xl"} className="text-white">
