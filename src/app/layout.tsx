@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope, Tenor_Sans } from "next/font/google";
 import "./globals.css";
-import { Footer, MarketplaceHeader, Navigation, TopBanner } from "@/components";
+// import { Footer, MarketplaceHeader, Navigation, TopBanner } from "@/components";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -27,13 +27,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${manrope.variable} ${tenor.variable} antialiased`}>
-        <TopBanner />
-        <MarketplaceHeader />
+        {/* <TopBanner /> */}
+        {/* <MarketplaceHeader /> */}
 
-        <Navigation />
+        {/* <Navigation /> */}
         {children}
 
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
