@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -37,12 +38,17 @@ export default function Hero() {
         </p> */}
 
         <div className="flex items-center gap-4">
-          <Button variant={"gold"} size={"xl"} className="text-white">
-            Shop Gold Coins
-          </Button>
-          <Button variant={"outline"} size={"xl"} className="text-white">
-            Shop Diamonds
-          </Button>
+          <Link href={"/marketplace"}>
+            <Button variant={"gold"} size={"xl"} className="text-white">
+              Shop Gold Coins
+            </Button>
+          </Link>
+
+          <Link href={"/auction/1"}>
+            <Button variant={"outline"} size={"xl"} className="text-white">
+              Shop Diamonds
+            </Button>
+          </Link>
         </div>
       </div>
 

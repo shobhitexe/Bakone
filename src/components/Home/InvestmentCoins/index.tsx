@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const Data = [
   {
@@ -58,7 +59,9 @@ export default function InvestMentCoins() {
           </div>
         </div>
 
-        <Button>View Investment Coins</Button>
+        <Link href={"/marketplace"}>
+          <Button>View Investment Coins</Button>
+        </Link>
       </div>
 
       <div className="grid grid-cols-3 justify-center mt-10">
